@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --teal: #1a7a6a;
+  --teal-light: #e1f5ee;
+  --teal-mid: #4db89e;
+  --navy: #1a2e4a;
+  --accent: #00c49a;
+  --bg: #f0f4f2;
+  --card: #ffffff;
+  --border: #dde8e4;
+  --text: #1a2e4a;
+  --muted: #6b8070;
+  --radius: 14px;
+  --danger: #e05d44;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type='text'],
+input[type='date'],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: #fafcfb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--teal-mid);
+  box-shadow: 0 0 0 3px rgba(77, 184, 158, 0.15);
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--teal-mid) transparent;
+}
