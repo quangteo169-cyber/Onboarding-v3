@@ -43,7 +43,7 @@ export async function POST(request) {
     }
 
     const client = new GoogleGenerativeAI(apiKey)
-    const model = client.getGenerativeModel({ model: 'gemini-1.5-flash' })
+    const model = client.getGenerativeModel({ model: 'gemini-1.5-flash-latest' })
 
     const memberList = members
       .map((m) => `- Tên: ${m.name}, Chức vụ: ${m.position}, Phòng ban: ${m.dept}`)
